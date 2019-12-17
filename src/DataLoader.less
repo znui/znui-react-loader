@@ -1,0 +1,51 @@
+@import "./zr.variables.less";
+
+@base: #54aaf1;
+
+.zr-loader-color(@color: @zr-color-primary){
+    &>.loader{
+        &[data-loader^='ball'],
+        &[data-loader='circle-clock'],
+        &[data-loader='spinner']{
+            background-color: @color;
+        }
+
+        &{
+            border-left-color: @color !important;
+            border-right-color: @color !important;
+        }
+
+        &::after, &::before{
+            border-top-color: @color !important;
+            background-color: @color;
+            box-shadow: 0 0 10px @color;
+        }
+
+        &[data-loader='arrow-circle']{
+            &::after, &::before{
+                background-color: transparent;
+                box-shadow: none;
+            }
+        }
+    }
+    &>.content{
+        color: @color;
+    }
+}
+
+.znui-react-data-loader {
+    margin: 50px auto;
+    font-family: monospace;
+
+    &>.loader{
+        margin: 10px auto;
+    }
+
+    &>.content{
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: bolder;
+    }
+
+    .zr-loader-color(@base);
+}
