@@ -1,16 +1,17 @@
 {
   "name": "znui-react-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Web loader component.",
   "main": "index.all.js",
   "scripts": {
     "webpack-example": "rimraf example/dist && webpack --config webpack.config.example.js",
     "webpack-example-watch": "rimraf example/dist && webpack --config webpack.config.example.js --watch",
-    "clean": "rimraf dist && rimraf build",
-    "build": "npm run clean && babel src -d build",
+    "clean-dist": "rimraf dist",
+    "clean-build": "rimraf build",
     "webpack": "rimraf dist && webpack",
-    "dist": "npm run clean && webpack --uglify",
-    "release": "npm run clean && npm run build && npm run dist"
+    "build": "npm run clean-build && babel src -d build",
+    "dist": "npm run clean-dist && webpack --uglify",
+    "release": "npm run build && npm run dist"
   },
   "repository": {
     "type": "git",

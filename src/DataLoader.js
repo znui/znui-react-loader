@@ -1,7 +1,6 @@
-require('./DataLoader.less');
 var React = require('react');
 
-module.exports = React.createClass({
+module.exports = znui.react.createClass({
 	displayName:'DataLoader',
 	getDefaultProps: function (){
 		return {
