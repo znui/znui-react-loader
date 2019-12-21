@@ -1,4 +1,4 @@
-var React = require('react');
+var React = require('react') || znui.React;
 var DataLoader = require('./DataLoader');
 module.exports = znui.react.createClass({
 	displayName:'Loading',

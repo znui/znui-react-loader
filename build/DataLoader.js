@@ -1,7 +1,6 @@
 "use strict";
 
-var React = require('react');
-
+var React = require('react') || znui.React;
 module.exports = znui.react.createClass({
   displayName: 'DataLoader',
   getDefaultProps: function getDefaultProps() {
@@ -14,7 +13,7 @@ module.exports = znui.react.createClass({
   render: function render() {
     return React.createElement("div", {
       style: this.props.style,
-      className: 'znui-react-data-loader ' + this.props.className
+      className: 'zr-data-loader ' + this.props.className
     }, React.createElement("div", {
       className: "loader",
       "data-loader": this.props.loader

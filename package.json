@@ -1,8 +1,8 @@
 {
   "name": "znui-react-loader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Web loader component.",
-  "main": "index.all.js",
+  "main": "production.js",
   "scripts": {
     "webpack-example": "rimraf example/dist && webpack --config webpack.config.example.js",
     "webpack-example-watch": "rimraf example/dist && webpack --config webpack.config.example.js --watch",
@@ -25,6 +25,6 @@
   "email": "xuyy0618@qq.com",
   "license": "MIT",
   "dependencies": {
-    "znui-react": "^1.1.7"
+    "znui-react": "^1.2.5"
   }
 }

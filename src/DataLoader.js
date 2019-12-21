@@ -1,4 +1,4 @@
-var React = require('react');
+var React = require('react') || znui.React;
 
 module.exports = znui.react.createClass({
 	displayName:'DataLoader',
@@ -11,7 +11,7 @@ module.exports = znui.react.createClass({
 	},
 	render:function(){
 		return (
-			<div style={this.props.style} className={'znui-react-data-loader ' + this.props.className}>
+			<div style={this.props.style} className={'zr-data-loader ' + this.props.className}>
 				<div className="loader" data-loader={this.props.loader}></div>
 				<div className="content">{this.props.content}</div>
 			</div>
