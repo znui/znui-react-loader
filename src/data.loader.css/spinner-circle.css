@@ -1,7 +1,7 @@
 [data-loader='spinner-circle']
 {
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
 
     animation: .4s infinite linear spinner-circle;
 

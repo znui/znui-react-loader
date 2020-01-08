@@ -21,8 +21,8 @@
 }
 [data-loader='timer']:after
 {
-    top: 11px;
-    left: 11px;
+    top: 12px;
+    left: 13px;
 
     width: 10px;
     height: 2px;
@@ -37,8 +37,8 @@
 
 [data-loader='timer']:before
 {
-    top: 11px;
-    left: 11px;
+    top: 12px;
+    left: 13px;
 
     width: 8px;
     height: 2px;

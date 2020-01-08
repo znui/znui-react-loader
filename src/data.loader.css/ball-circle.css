@@ -4,6 +4,7 @@
 
     width: 40px;
     height: 40px;
+    background-color: transparent !important;
 }
 [data-loader='ball-circle']:before,
 [data-loader='ball-circle']:after

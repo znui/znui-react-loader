@@ -1,24 +1,23 @@
 "use strict";
 
 var React = require('react') || znui.React;
-module.exports = znui.react.createClass({
-  displayName: 'DataLoader',
+module.exports = React.createClass({
+  displayName: 'ZRDataLoader',
   getDefaultProps: function getDefaultProps() {
     return {
       loader: 'timer',
-      content: 'Loading...',
-      className: ''
+      color: 'primary',
+      size: 'size-large',
+      className: 'primary'
     };
   },
   render: function render() {
     return React.createElement("div", {
-      style: this.props.style,
-      className: 'zr-data-loader ' + this.props.className
+      className: znui.react.classname("zr-data-loader", this.props.className, this.props.color, this.props.size),
+      style: this.props.style
     }, React.createElement("div", {
-      className: "loader",
+      className: "loader-loading",
       "data-loader": this.props.loader
-    }), React.createElement("div", {
-      className: "content"
-    }, this.props.content));
+    }));
   }
 });

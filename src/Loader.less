@@ -1,0 +1,74 @@
+@import "./zr.variables.less";
+
+@base: #54aaf1;
+
+.zr-loader-color(@color: @zr-color-primary){
+    &>.content{
+        color: @color;
+    }
+}
+
+.zr-loader {
+    margin: 20px auto;
+    padding: 10px;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>.content{
+        text-align: center;
+        font-size: 14px;
+    }
+
+
+    //layout: flex-row, flex-column
+    &.flex-row{
+        flex-direction: row;
+    }
+
+    &.flex-column{
+        flex-direction: column;
+    }
+
+
+    &.primary{
+        .zr-loader-color(@base);
+    }
+
+    &.black{
+        .zr-loader-color(@zr-color-black);
+    }
+
+    &.white{
+        .zr-loader-color(@zr-color-white);
+    }
+
+    &.white-background{
+        background-color: rgba(177, 177, 177, 0.59);
+    }
+
+    &.default{
+        .zr-loader-color(@zr-color-default);
+    }
+
+    &.blue{
+        .zr-loader-color(@zr-color-blue);
+    }
+
+    &.success{
+        .zr-loader-color(@zr-color-success);
+    }
+
+    &.info{
+        .zr-loader-color(@zr-color-info);
+    }
+
+    &.warning{
+        .zr-loader-color(@zr-color-warning);
+    }
+
+    &.danger{
+        .zr-loader-color(@zr-color-danger);
+    }
+}

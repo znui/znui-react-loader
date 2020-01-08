@@ -3,7 +3,7 @@
 @base: #54aaf1;
 
 .zr-loader-color(@color: @zr-color-primary){
-    &>.loader{
+    .loader-loading{
         &[data-loader^='ball'],
         &[data-loader='circle-clock'],
         &[data-loader='spinner']{
@@ -28,24 +28,63 @@
             }
         }
     }
-    &>.content{
-        color: @color;
-    }
 }
 
 .zr-data-loader {
-    margin: 50px auto;
-    font-family: monospace;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    &>.loader{
-        margin: 10px auto;
+    &.size-small{
+        min-height: 30px;
+        min-width: 30px;
     }
 
-    &>.content{
-        text-align: center;
-        font-size: 1.4rem;
-        font-weight: bolder;
+    &.size-middle{
+        min-height: 40px;
+        min-width: 40px;
     }
 
-    .zr-loader-color(@base);
+    &.size-large{
+        min-height: 50px;
+        min-width: 50px;
+    }
+
+
+    &.primary{
+        .zr-loader-color(@base);
+    }
+
+    &.black{
+        .zr-loader-color(@zr-color-black);
+    }
+
+    &.white{
+        .zr-loader-color(@zr-color-white);
+    }
+
+    &.default{
+        .zr-loader-color(@zr-color-default);
+    }
+
+    &.blue{
+        .zr-loader-color(@zr-color-blue);
+    }
+
+    &.success{
+        .zr-loader-color(@zr-color-success);
+    }
+
+    &.info{
+        .zr-loader-color(@zr-color-info);
+    }
+
+    &.warning{
+        .zr-loader-color(@zr-color-warning);
+    }
+
+    &.danger{
+        .zr-loader-color(@zr-color-danger);
+    }
 }
