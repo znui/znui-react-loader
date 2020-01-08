@@ -2990,19 +2990,19 @@
   flex-direction: column;
 }
 .zr-loader.primary .loader-loading {
-  border-left-color: #54aaf1 !important;
-  border-right-color: #54aaf1 !important;
+  border-left-color: #3498db !important;
+  border-right-color: #3498db !important;
 }
 .zr-loader.primary .loader-loading[data-loader^='ball'],
 .zr-loader.primary .loader-loading[data-loader='circle-clock'],
 .zr-loader.primary .loader-loading[data-loader='spinner'] {
-  background-color: #54aaf1;
+  background-color: #3498db;
 }
 .zr-loader.primary .loader-loading::after,
 .zr-loader.primary .loader-loading::before {
-  border-top-color: #54aaf1 !important;
-  background-color: #54aaf1;
-  box-shadow: 0 0 10px #54aaf1;
+  border-top-color: #3498db !important;
+  background-color: #3498db;
+  box-shadow: 0 0 10px #3498db;
 }
 .zr-loader.primary .loader-loading[data-loader='arrow-circle']::after,
 .zr-loader.primary .loader-loading[data-loader='arrow-circle']::before {
@@ -3010,7 +3010,7 @@
   box-shadow: none;
 }
 .zr-loader.primary > .content {
-  color: #54aaf1;
+  color: #3498db;
 }
 .zr-loader.black .loader-loading {
   border-left-color: #3d3d3d !important;

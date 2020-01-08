@@ -1,7 +1,5 @@
 @import "./zr.variables.less";
 
-@base: #54aaf1;
-
 .zr-loader-color(@color: @zr-color-primary){
     &>.content{
         color: @color;
@@ -21,7 +19,6 @@
         font-size: 14px;
     }
 
-
     //layout: flex-row, flex-column
     &.flex-row{
         flex-direction: row;
@@ -33,7 +30,7 @@
 
 
     &.primary{
-        .zr-loader-color(@base);
+        .zr-loader-color(@zr-color-primary);
     }
 
     &.black{
