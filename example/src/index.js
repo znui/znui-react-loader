@@ -1,12 +1,11 @@
 require('znui-react');
-require('../src/index.less');
+require('../../src/index.less');
 require('./index.less');
-var React = require('react');
-var ReactDOM = require('react-dom');
-var loader = require('../src/index.js');
+var React = znui.React || require('react');
+var loader = require('../../src/index');
 
-ReactDOM.render(
-    <div>
+znui.react.createApplication({
+    render: <div>
         <loader.DataLoader loader="500px-spinner" />
         <loader.DataLoader loader="arrow-circle" />
         <loader.DataLoader loader="ball-auto" />
@@ -49,7 +48,5 @@ ReactDOM.render(
         <loader.Loader loader="spinner" />
         <loader.Loader loader="timer" />
         <loader.Loader loader="wave" />
-    </div>,
-    document.getElementById('container'),
-);
-
+    </div>
+});

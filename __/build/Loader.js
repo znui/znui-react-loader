@@ -1,10 +1,10 @@
 "use strict";
 
-var React = require('react') || znui.React;
+var React = znui.React || require('react');
 
 var DataLoader = require('./DataLoader');
 
-module.exports = znui.react.createClass({
+module.exports = React.createClass({
   displayName: 'ZRLoader',
   getDefaultProps: function getDefaultProps() {
     return {

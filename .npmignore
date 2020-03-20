@@ -4,9 +4,10 @@
 example/*
 node_modules/*
 src/*
+example/*
+__/development.js
+__/production.js
 .babelrc
 .gitignore
 .npmignore
 package-lock.json
-webpack.config.example.js
-webpack.config.js

@@ -1,6 +1,7 @@
 "use strict";
 
-var React = require('react') || znui.React;
+var React = znui.React || require('react');
+
 module.exports = React.createClass({
   displayName: 'ZRDataLoader',
   getDefaultProps: function getDefaultProps() {
@@ -18,6 +19,8 @@ module.exports = React.createClass({
     }, React.createElement("div", {
       className: "loader-loading",
       "data-loader": this.props.loader
-    }));
+    }), !!this.props.title && React.createElement("span", {
+      className: "title"
+    }, this.props.title));
   }
 });

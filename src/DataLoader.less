@@ -3,6 +3,7 @@
 @base: #54aaf1;
 
 .zr-loader-color(@color: @zr-color-primary){
+    color: @zr-color-primary;
     .loader-loading{
         &[data-loader^='ball'],
         &[data-loader='circle-clock'],
@@ -35,7 +36,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    .title{
+        padding: 5px;
+    }
     &.size-small{
         min-height: 30px;
         min-width: 30px;
