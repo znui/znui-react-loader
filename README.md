@@ -6,7 +6,7 @@ Loader Component.
 
 ## Demo
 
-[Take a look at the demo](https://yangyxu.github.io/znui-react-loader/example/www/index.html)
+[Take a look at the demo](https://znui.github.io/znui-react-loader/example/www/index.html)
 
 ## Installation
 
