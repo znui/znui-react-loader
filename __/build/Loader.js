@@ -17,15 +17,15 @@ module.exports = React.createClass({
     };
   },
   render: function render() {
-    return React.createElement("div", {
+    return /*#__PURE__*/React.createElement("div", {
       style: this.props.style,
       className: znui.react.classname("zr-loader", this.props.className, this.props.color, this.props.layout)
-    }, React.createElement(DataLoader, {
+    }, /*#__PURE__*/React.createElement(DataLoader, {
       className: this.props.dataLoaderClassName,
       loader: this.props.loader,
       color: this.props.color,
       size: this.props.size
-    }), React.createElement("div", {
+    }), /*#__PURE__*/React.createElement("div", {
       className: "content"
     }, this.props.content));
   }

@@ -17,7 +17,7 @@ module.exports = React.createClass({
     if (this.props.data) {
       return this.props.children;
     } else {
-      return React.createElement(Loader, this.props);
+      return /*#__PURE__*/React.createElement(Loader, this.props);
     }
   }
 });

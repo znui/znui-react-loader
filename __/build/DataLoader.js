@@ -13,13 +13,13 @@ module.exports = React.createClass({
     };
   },
   render: function render() {
-    return React.createElement("div", {
+    return /*#__PURE__*/React.createElement("div", {
       className: znui.react.classname("zr-data-loader", this.props.className, this.props.color, this.props.size),
       style: this.props.style
-    }, React.createElement("div", {
+    }, /*#__PURE__*/React.createElement("div", {
       className: "loader-loading",
       "data-loader": this.props.loader
-    }), !!this.props.title && React.createElement("span", {
+    }), !!this.props.title && /*#__PURE__*/React.createElement("span", {
       className: "title"
     }, this.props.title));
   }
