@@ -1,6 +1,6 @@
 {
   "name": "znui-react-loader",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Web loader component.",
   "main": "index.js",
   "scripts": {
