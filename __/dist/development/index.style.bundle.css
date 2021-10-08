@@ -2201,7 +2201,7 @@
   color: #d9534f;
 }
 .zr-loader {
-  margin: 20px auto;
+  margin: 20px;
   padding: 10px;
   font-family: monospace;
   display: flex;
